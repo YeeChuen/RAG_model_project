@@ -1,5 +1,10 @@
-pinecone-client
+pip
 langchain
-streamlit
 pypdf
-rapidocr-onnxruntime
+setuptools
+wheel
+langchain-text-splitters
+spacy
+langchain-community
+streamlit
+pinecone-client
