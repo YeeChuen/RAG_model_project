@@ -1,10 +1,8 @@
 pip
 langchain
 pypdf
-setuptools
-wheel
 langchain-text-splitters
-spacy
 langchain-community
 streamlit
 pinecone-client
+ollama
