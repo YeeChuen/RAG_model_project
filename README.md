@@ -14,7 +14,7 @@ Follow the steps below for installation:
 5. ```ollama run llama2```
 6. ```ollama pull llama2```
 7. Create a free account on Pinecone, https://app.pinecone.io/
-8. Create an index in your Pinecone account
-9. Add the you Pinecone API key to this project. (TODO: how to add?)
+8. Create an index in your Pinecone account (TODO: use the index db made)
+9. Add the you Pinecone API key to this project. (TODO: how to with GUI?)
 
 ### Usage

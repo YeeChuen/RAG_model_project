@@ -6,3 +6,4 @@ langchain-community
 streamlit
 pinecone-client
 ollama
+tqdm
