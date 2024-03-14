@@ -12,7 +12,6 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import CharacterTextSplitter
 # text embedding
 from langchain_community.embeddings import OllamaEmbeddings
-from langchain_community.vectorstores import FAISS
 # store to a vector DB
 from pinecone import Pinecone
 
@@ -45,23 +44,42 @@ def textSplitter(document):
     return split_texts
 
 def textEmbedding(split_texts):
-    embeddings = OllamaEmbeddings()
-    vector = FAISS.from_documents(split_texts, embeddings)
+    embeddings = OllamaEmbeddings(model="llama2")
+
+    # testing 
+    print("Testing on random text")
+    random_text = "test ollama embedding result"
+    print(random_text) # <-- development and debug purposes
+    query_result = embeddings.embed_query(random_text)
+    #print(query_result) # <-- development and debug purposes
+    print(len(query_result)) # <-- development and debug purposes
+
+    # testing 
+    print("Testing on 1 of the split_text")
+    print(split_texts[0]) # <-- development and debug purposes
+    query_result = embeddings.embed_query(split_texts[0])
+    #print(query_result) # <-- development and debug purposes
+    print(len(query_result)) # <-- development and debug purposes
+
+    print("Embedding the whole of split_texts")
+    vector = embeddings.embed_documents(split_texts)
     print(vector) # <-- development and debug purposes
     print(len(vector)) # <-- development and debug purposes
 
 
 def main():
     args = getArgument()
-    pc = Pinecone(api_key=args.pinecone_key)
 
     print("Spawnning a temporary vector db... (TODO)")
+    pc = Pinecone(api_key=args.pinecone_key)
     #index = pc.Index("tempdb") # <-- TODO: implement pinecone free version, Starter Index.
 
     print("Loading PDF file...")
     document = loadPdf(args.pdf_file)
+
     print('Spltting document...')
-    split_texts = textSplitter([document[0]])
+    split_texts = textSplitter([document[0]]) # <-- testing only, hence we are only splitting and embedding page 1.
+    
     print('Embedding document...')
     textEmbedding(split_texts)
 
