@@ -1,12 +1,12 @@
 ## RAG model project
 
-# Summary
+### Summary
 
-# Goal
+### Goal
 
-# Future
+### Future
 
-# Installation
+### Installation
 Follow the steps below for installation.
 
 Clone the repository:
@@ -18,4 +18,4 @@ Install required library to your python/python3
 Download model Spacy text splitter model
 3. ```python -m spacy download en_core_web_sm```
 
-# Usage
+### Usage
