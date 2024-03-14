@@ -1,7 +1,7 @@
 # Author(s): Yee
 '''
 Usage:
-    python3 upload.py --pdf_file=Correcting_Diverse_Factual_Errors_paper.pdf --pinecone_key=7f89efd5-ec0d-49df-b35c-7be9459539a8
+    python3 upload.py --pdf_file=Correcting_Diverse_Factual_Errors_paper.pdf --pinecone_key=
 '''
 #_____
 # imports
@@ -32,10 +32,10 @@ def getArgument():
 
 def loadPdf(pdf_file):
     loader = PyPDFLoader(pdf_file) # <-- basic pypdf, not going to extract images. (Does not work with my old local Mac)
-    pages = loader.load_and_split()
-    #print(len(pages)) # <-- development and debug purposes
-    #print(pages[0]) # <-- development and debug purposes
-    return pages
+    document = loader.load_and_split()
+    #print(len(document)) # <-- development and debug purposes
+    #print(document[0]) # <-- development and debug purposes
+    return document
 
 def textSplitter(document):
     text_splitter = CharacterTextSplitter(chunk_size=200, chunk_overlap=0)
@@ -61,7 +61,7 @@ def main():
     print("Loading PDF file...")
     document = loadPdf(args.pdf_file)
     print('Spltting document...')
-    split_texts = textSplitter(document)
+    split_texts = textSplitter([document[0]])
     print('Embedding document...')
     textEmbedding(split_texts)
 
