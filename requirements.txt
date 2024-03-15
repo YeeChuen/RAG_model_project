@@ -1,5 +1,6 @@
 pinecone-client
 langchain
 streamlit
-pypdf
+PyPDF2
+sentence-transformers
 rapidocr-onnxruntime
