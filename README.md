@@ -21,7 +21,7 @@ The RAG system utilizes LangChain for chunking, Sentence Transformers for embedd
 2. Run the script with the path to the PDF file as a command-line argument:
 
     ```bash
-    python main_script.py path/to/your/pdf.pdf
+    python upload_pallavi.py path/to/your/pdf.pdf
     ```
 
 ## Configuration
