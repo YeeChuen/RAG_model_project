@@ -10,23 +10,14 @@ The RAG system utilizes LangChain for chunking, Sentence Transformers for embedd
 
 1. Clone the repository:
 
-   
+2. Navigate to the project directory
 
-2. Navigate to the project directory:
+3. Install the required dependencies
 
-    ```bash
-    cd your-repository
-    ```
-
-3. Install the required dependencies:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
 
 ## Usage
 
-1. Ensure you have LangChain and Pinecone API key set up.
+1. Ensure you have LangChain and Pinecone API key set up. 
 2. Run the script with the path to the PDF file as a command-line argument:
 
     ```bash
