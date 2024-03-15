@@ -6,4 +6,5 @@ langchain-community
 streamlit
 pinecone-client
 ollama
+sentence-transformers
 tqdm

@@ -14,7 +14,8 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 # text embedding
 from langchain_community.embeddings import OllamaEmbeddings
-from langchain_openai import OpenAIEmbeddings # <-- testing
+from sentence_transformers import SentenceTransformer
+
 # store to a vector DB
 from pinecone import Pinecone
 
@@ -60,7 +61,9 @@ def textSplitter(document):
 
 def textEmbedding(split_texts):
     print('Embedding document...')
-    embeddings = OllamaEmbeddings(model="llama2")
+    #embeddings = OllamaEmbeddings(model="llama2") # <-- depreciated, too long
+
+    model = SentenceTransformer("all-MiniLM-L6-v2") # <-- smaller embedding model
 
     '''
     # testing 
@@ -81,11 +84,18 @@ def textEmbedding(split_texts):
     '''
     print("Embedding the whole of split_texts")
     vectors = []
-    debug = 0
+    #debug = 0
     for text in tqdm(split_texts):
-        if debug == 5: break
-        vectors.append(embeddings.embed_query(text))
-        debug += 1
+        #if debug == 5: break
+        #vectors.append(embeddings.embed_query(text))
+        #print(text.page_content)
+        vector = model.encode([text.page_content]) 
+        #print(vector[0]) # <-- development and debug purposes
+        #print(len(vector[0])) # <-- development and debug purposes
+
+        vectors.append(vector[0])
+
+        #debug += 1
 
     #print(vectors) # <-- development and debug purposes
     #print(len(vectors)) # <-- development and debug purposes
