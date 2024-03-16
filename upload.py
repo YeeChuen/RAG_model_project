@@ -1,7 +1,7 @@
 # Author(s): Yee
 '''
 Usage:
-    python3 upload.py --pdf_file=Correcting_Diverse_Factual_Errors_paper.pdf --pinecone_key=
+    python3 upload.py --pdf_file=Correcting_Diverse_Factual_Errors_paper.pdf --pinecone_key=<your pinecone API key here>
 '''
 #_____
 # imports
