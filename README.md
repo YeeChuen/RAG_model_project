@@ -31,15 +31,15 @@ git clone https://github.com/YeeChuen/RAG_model_project
 cd ./RAG_model_project
 ```
 
-3. (a) **Ensure that you have enable long path on your Windows, follow steps [Microsoft Tutorial](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry) or [Video guide](https://www.youtube.com/watch?v=E0e28Z1iHWs)
+3. **Ensure that you have enable long path on your Windows, follow steps [Microsoft Tutorial](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry) or [Video guide](https://www.youtube.com/watch?v=E0e28Z1iHWs)
 
-3. (b) Install python dependencies
+4. Install python dependencies
 
 ```
 pip install -r requirements.txt
 ```
 
-4. Download up Ollama following on [Ollama](https://github.com/ollama/ollama), then download llama2 model using 
+5. Download up Ollama following on [Ollama](https://github.com/ollama/ollama), then download llama2 model using 
 
 ```
 ollama run llama2
@@ -51,9 +51,9 @@ ollama run llama2
 ollama pull llama2
 ```
 
-5. Set up Pinecone account on [Pinecone](https://app.pinecone.io/)
+7. Set up Pinecone account on [Pinecone](https://app.pinecone.io/)
 
-6. Create an index in your Pinecone account, ** note: use index name = 'rag-db', dimension = 384.
+8. Create an index in your Pinecone account, ** note: use index name = 'rag-db', dimension = 384.
 
 ### Usage
 
