@@ -31,7 +31,7 @@ git clone https://github.com/YeeChuen/RAG_model_project
 cd ./RAG_model_project
 ```
 
-3.0 **Ensure that you have enable long path on your Windows, follow steps https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry or https://www.youtube.com/watch?v=E0e28Z1iHWs
+3.0 **Ensure that you have enable long path on your Windows, follow steps [Microsoft Tutorial](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry) or [Video guide](https://www.youtube.com/watch?v=E0e28Z1iHWs)
 
 3.1 Install python dependencies
 
