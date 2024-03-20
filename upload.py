@@ -29,7 +29,6 @@ def getArgument():
     parser = argparse.ArgumentParser(description="Upload a PDF file to the RAG model.")
     parser.add_argument("--pdf_file", help=":Path to the PDF file to upload", required=True)
     parser.add_argument("--pinecone_key", help=":The API key in your Pinecone console at https://app.pinecone.io/", default = '')
-    #parser.add_argument("--openai_key", help=":The API key for open-ai", default = '')
     return parser.parse_args()
 
 def loadPdf(pdf_file):
