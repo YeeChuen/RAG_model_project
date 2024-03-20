@@ -53,9 +53,7 @@ ollama pull llama2
 
 5. Set up Pinecone account on [Pinecone](https://app.pinecone.io/)
 
-6. Create an index in your Pinecone account,
-
-note: use index name = 'rag-db', dimension = 384.
+6. Create an index in your Pinecone account, ** note: use index name = 'rag-db', dimension = 384.
 
 ### Usage
 
