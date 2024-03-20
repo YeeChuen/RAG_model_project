@@ -1,22 +1,22 @@
-## RAG model
+# RAG model
 
 Retrieval-augmented generation (RAG) is a framework to give generative models knowledge without finetuning themselves. In this way, an LLM can adapt to new tasks quickly with the presence of new documents.
 
-### Summary
+## Summary
 
 This project implements a Retrieval-Augmented Generation (RAG) system using LangChain for text processing and Pinecone for vector indexing. The system allows users to upload PDF files, clean the text, split it into chunks, embed the chunks, and store them in Pinecone for efficient retrieval.
 
 The RAG system utilizes LangChain for chunking, Sentence Transformers for embedding, while Pinecone is used as a vector database for efficient retrieval. This README provides instructions on how to install and use the system.
 
-### Goal
+## Goal
 
 To acquire the knowledge and understanding of building a RAG model with utilizing existing pipelines and library to assist in this implementation. Moreover, experimenting with various paramters that affects the performance of RAG model such as different chunking size, size of top-k chunk retrived to be feed into LLM and so on.
 
-### Future
+## Future
 
 Future Improvement to be updated.
 
-### Installation
+## Installation
 Follow the steps below for installation:
 
 1. Clone the repository
@@ -55,7 +55,7 @@ ollama pull llama2
 
 6. Create an index in your Pinecone account, note: use dimension = 384.
 
-### Usage
+## Usage
 
 1. Ensure that requirements is installed, and dependencies has been set up(Ollama, Pinecone, etc).
 
@@ -67,6 +67,6 @@ ollama pull llama2
 python3 upload.py --pdf_file=<path/to/PDF> --pinecone_key=<Pinecone API key>
 ```
 
-### Configuration
+## Configuration
 
 Configurations to be updated.
