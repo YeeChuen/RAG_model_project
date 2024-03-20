@@ -10,7 +10,7 @@ The RAG system utilizes LangChain for chunking, Sentence Transformers for embedd
 
 ## Goal
 
-To acquire the knowledge and understanding of building a RAG model with utilizing existing pipelines and library to assist in this implementation. Moreover, experimenting with various paramters that affects the performance of RAG model such as different chunking size, size of top-k chunk retrived to be feed into LLM and so on.
+To acquire the knowledge and understanding of building a RAG model with utilizing existing pipelines and library to assist in this implementation. Moreover, experimenting with various parameters that affects the performance of RAG model such as different chunking size, size of top-k chunk retrived to be feed into LLM and so on.
 
 ## Future
 
