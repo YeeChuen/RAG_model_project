@@ -64,7 +64,7 @@ ollama pull llama2
 3. upload your pdf file using 
 
 ```
-python3 upload.py --pdf_file=<path/to/PDF> --pinecone_key=<Pinecone API key>
+python upload.py --pdf_file=<path/to/PDF> --pinecone_key=<Pinecone API key>
 ```
 
 ### Configuration
