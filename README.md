@@ -39,7 +39,7 @@ cd ./RAG_model_project
 pip install -r requirements.txt
 ```
 
-4. Download up Ollama following on https://github.com/ollama/ollama, then download llama2 model using 
+4. Download up Ollama following on [Ollama](https://github.com/ollama/ollama), then download llama2 model using 
 
 ```
 ollama run llama2
@@ -51,7 +51,7 @@ ollama run llama2
 ollama pull llama2
 ```
 
-5. Set up Pinecone account on https://app.pinecone.io/
+5. Set up Pinecone account on [Pinecone](https://app.pinecone.io/)
 
 6. Create an index in your Pinecone account, note: use dimension = 384.
 
@@ -59,7 +59,7 @@ ollama pull llama2
 
 1. Ensure that requirements is installed, and dependencies has been set up(Ollama, Pinecone, etc).
 
-2. Access your Pinecone API key in the "API Keys" section in the side bar on https://app.pinecone.io/ after login.
+2. Access your Pinecone API key in the "API Keys" section in the side bar on [Pinecone](https://app.pinecone.io/) after login.
 
 3. upload your pdf file using 
 
