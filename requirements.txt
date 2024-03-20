@@ -1,5 +1,10 @@
-pinecone-client
+pip
 langchain
-streamlit
 pypdf
-rapidocr-onnxruntime
+langchain-text-splitters
+langchain-community
+streamlit
+pinecone-client
+ollama
+sentence-transformers
+tqdm
