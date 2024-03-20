@@ -1,14 +1,16 @@
 ## RAG model
 
-This project implements a Retrieval-Augmented Generation (RAG) system using LangChain for text processing and Pinecone for vector indexing. The system allows users to upload PDF files, clean the text, split it into chunks, embed the chunks, and store them in Pinecone for efficient retrieval.
+Retrieval-augmented generation (RAG) is a framework to give generative models knowledge without finetuning themselves. In this way, an LLM can adapt to new tasks quickly with the presence of new documents.
 
 ### Summary
+
+This project implements a Retrieval-Augmented Generation (RAG) system using LangChain for text processing and Pinecone for vector indexing. The system allows users to upload PDF files, clean the text, split it into chunks, embed the chunks, and store them in Pinecone for efficient retrieval.
 
 The RAG system utilizes LangChain for chunking, Sentence Transformers for embedding, while Pinecone is used as a vector database for efficient retrieval. This README provides instructions on how to install and use the system.
 
 ### Goal
 
-Goal to be updated.
+To acquire the knowledge and understanding of building a RAG model with utilizing existing pipelines and library to assist in this implementation. Moreover, experimenting with various paramters that affects the performance of RAG model such as different chunking size, size of top-k chunk retrived to be feed into LLM and so on.
 
 ### Future
 
@@ -35,7 +37,7 @@ cd ./RAG_model_project
 pip install -r requirements.txt
 ```
 
-4. Set up Ollama following on https://github.com/ollama/ollama, download llama2 using 
+4. Download up Ollama following on https://github.com/ollama/ollama, then download llama2 model using 
 
 ```
 ollama run llama2
@@ -55,7 +57,7 @@ ollama pull llama2
 
 1. Ensure that requirements is installed, and dependencies has been set up(Ollama, Pinecone, etc).
 
-2. Access your Pinecone API key on the "API Keys" section on the side bar on https://app.pinecone.io/ after login.
+2. Access your Pinecone API key in the "API Keys" section in the side bar on https://app.pinecone.io/ after login.
 
 3. upload your pdf file using 
 
