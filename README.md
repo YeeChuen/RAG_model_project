@@ -70,3 +70,8 @@ python upload.py --pdf_file=<path/to/PDF> --pinecone_key=<Pinecone API key>
 ## Configuration
 
 Configurations to be updated.
+
+## Demo Video
+
+Please find the demo video on execution below:
+[Short Demo](https://drive.google.com/file/d/1bNf5xmQ6m8Q8OgOkFYCN4DHeTtbTyxOF/view?usp=drive_link)
